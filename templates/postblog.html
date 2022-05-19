@@ -6,7 +6,7 @@
   <div class="container">
     <form class="about" action="/post" method="post" enctype="multipart/form-data">
       <div class="about-author">
-        <h1>Post image Upload</h1>
+        <h1>Post Image Upload</h1>
         <div class="avatar-upload">
           <div class="avatar-edit">
             <input type='file' accept=".png, .jpg, .jpeg, .jfif" id="imageUpload" name="postimage" />
@@ -18,7 +18,7 @@
           </div>
         </div>
         <input type="checkbox" name="random" class="checkbox" checked>
-        <label for="random" style="color: #004eff;font-size:19px;">random</label>
+        <label for="random" style="color: #004eff;font-size:19px;">Random</label>
         <br><br>
         <script type="text/javascript">
           function readURL(input) {
@@ -50,9 +50,9 @@
       <br><br>
       <input required type="password" name="password" class="inputbox" value="" placeholder="password">
       <br><br>
-      <button type="submit" id="check">Post</button>
+      <button type="submit" id="check" title="Post">Post</button>
       <div id="snackbar" style="background-color: #ed2727;color: white;">Sorry! The password is not right</div>
-      <div id="snackbar2" style="background-color: #ed2727;color: white;">Sorry! The file name already exist</div>
+      <div id="snackbar2" style="background-color: #ed2727;color: white;">Sorry! The file name already exists</div>
       <script type="text/javascript">
         function fail() {
           var x = document.getElementById("snackbar");
