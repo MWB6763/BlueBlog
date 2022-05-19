@@ -5,8 +5,8 @@
 <div id="content">
   <div class="video">
     <iframe width="560" height="315" src="{{video.link}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-    <a href="https://www.youtube.com/channel/UCozhS3MxzCGrPTffh0mqArw/videos" target="_blank">
-      <h2 id="video-title" title="Watch on youtube :)">{{video.title}}</h2>
+    <a href="https://youtube.com/c/BlueEdgeTechno/videos" target="_blank" title="{{video.title}}">
+      <h2 id="video-title" title="{{video.title}}">{{video.title}}</h2>
     </a>
   </div>
   <form class="about" action="/deletevideo/{{video.id}}" method="post">
@@ -15,7 +15,7 @@
     <br><br>
     <input required type="password" name="password" class="inputbox" value="" placeholder="password">
     <br><br>
-    <button type="submit" id="check">Delete</button>
+    <button type="submit" id="check" title="Delete">Delete</button>
     <div id="snackbar" style="background-color: #ed2727;color: white;">Sorry! The password is not right</div>
     <script type="text/javascript">
       function fail(){
