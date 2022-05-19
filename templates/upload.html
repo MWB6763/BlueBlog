@@ -13,7 +13,7 @@
       <br><br>
       <input required type="text" name="name" class="inputbox" value="" placeholder="Name of the game">
       <br><br>
-      <label>Name of the image&js files</label>
+      <label>Name of the image and JS files</label>
       <br><br>
       <input required type="text" name="nick" class="inputbox" value="" placeholder="Name of the files">
       <br><br>
@@ -21,12 +21,12 @@
       <br><br>
       <textarea required name="discrip" rows="2" cols="80" class="contentbox" placeholder="Description of the game"></textarea>
       <br><br>
-      <div class="upload-btn-wrapper">
+      <div class="upload-btn-wrapper" title="Upload image file">
         <button class="btn">Upload image file</button>
         <input required type="file" accept=".png" name="imagefile" />
       </div>
-      <div class="upload-btn-wrapper">
-        <button class="btn">Upload Js file</button>
+      <div class="upload-btn-wrapper" title="Upload JS file">
+        <button class="btn">Upload JS file</button>
         <input required type="file" accept=".js" name="jsfile" />
       </div>
       <br><br>
@@ -34,7 +34,7 @@
       <br><br>
       <input required type="password" name="password" class="inputbox" value="" placeholder="password">
       <br><br>
-      <button type="submit" id="check">Upload</button>
+      <button type="submit" id="check" title="Upload">Upload</button>
       <div id="snackbar" style="background-color: #ed2727;color: white;">Sorry! The password is not right</div>
       <script type="text/javascript">
         function fail() {
